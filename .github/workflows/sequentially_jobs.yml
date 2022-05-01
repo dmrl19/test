@@ -25,8 +25,8 @@ jobs:
           for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
           echo "Step 1 was completed"
       
-      - name: Run step 2 of Job 2
-      - run: |
-          echo Step 2 will started:
-          for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
-          echo "Step 2 was completed"
+#      - name: Run step 2 of Job 2
+#      - run: |
+#          echo Step 2 will started:
+#          for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
+#          echo "Step 2 was completed"
