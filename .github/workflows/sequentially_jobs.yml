@@ -31,3 +31,25 @@ jobs:
           echo Step 2 will started:
           for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
           echo "Step 2 was completed"
+          
+  job_three:   
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Step 1 of job 3      
+        run: |
+          echo Job 3 did not wait completion of Job 1 or Job 2
+          echo Step 1 will started:
+          for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
+          echo "Step 1 was completed"
+          
+      - name: Run Step 2 of job 3
+        run: |
+          echo Step 2 will started:
+          for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
+          echo "Step 2 was completed"
+          
+      - name: Run Step 3 of job 3
+        run: |
+          echo Step 3 will started:
+          for i in {1..10}; do echo $i; sleep 2; done # Simulate "long process"
+          echo "Step 3 was completed"
