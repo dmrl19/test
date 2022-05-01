@@ -1,3 +1,4 @@
+# More info on https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
 name: CI Display message with manual trigger
 
 on: # Controls when the workflow will run
